@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<title>home page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href= style.css>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<a class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" title="home page"><i class="fa fa-home w3-margin-right"></i>1G</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class='far fa-comment-alt'></i></a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+                <i style='font-size:24px' class='far'>&#xf2bd;</i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3">
+                <!-- Profile -->
+                <div class="w3-card w3-round w3-white">
+                    <div class="w3-container">
+                        <h4 class="w3-center">הפרופיל שלי</h4>
+                        <p class="w3-center"><img src="C:\userAvatar.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                        <hr>
+                        <p><i class="fas fa-pencil-alt w3-margin-left w3-text-theme"></i> התפקיד שלי </p>
+                        <p><i class="fa fa-home fa-fw w3-margin-left w3-text-theme"></i> ישוב תנועת הנוער </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div class="w3-col m7">
+
+                <div class="w3-row-padding">
+                    <div class="w3-col m12">
+                        <div class="w3-card w3-round w3-white">
+                            <div class="w3-container w3-padding w3-right-align">
+                                <h6 class="w3-opacity ">:) יש לכם רעיון לפעולה ? שתפו אותנו </h6>
+                                <p contenteditable="true" class="w3-border w3-padding"> !כתבו את הקובץ , ואל תשכחו להעלות</p>
+                                <form action="welcome_get.php" method="get">
+                                    <input type="submit">
+                                    <input type="file" id="myFile" name="filename" class="w3-margin-right w3-text=theme"><i style='font-size:18px' class='fas'>&#xf303;</i></i> העלה קובץ </button>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Middle Column -->
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="w3-col m2">
+                <div class="w3-card w3-round w3-white w3-center">
+                    <div class="w3-container">
+                        <div class="w3-card w3-round w3-theme w3-center">
+                            <div class="w3-container">
+                                <p>מאגר פעולות</p>
+                            </div>
+                        </div>
+                        <p class="w3-container">
+
+                            <select class="w3-select-blue" style="width:150px" name="option">
+                                <option value="" disabled selected>גילאים</option>
+                                <option value="1">שיכבה בוגרת</option>
+                                <option value="2">שיכבה צעירה</option>
+                            </select>
+
+                            <select class="w3-select-blue" style="width:150px" name="option">
+                                <option value="" disabled selected>נושאים</option>
+                                <option value="1">פעילויות כיף</option>
+                                <option value="2">פעילויות העשרה</option>
+                            </select>
+
+                            <select class="w3-select-blue" style="width:150px" name="option">
+                                <option value="" disabled selected>משך הפעילות</option>
+                                <option value="1">מעל שעה</option>
+                                <option value="2">מתחת לשעה</option>
+                            </select>
+                        </p>
+                    </div>
+                    <p> <button type="button" class="w3-button w3-theme"><i class="fa fa-search"></i></i> חפשו</button></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Right Column -->
+    </div>
+
+    <!-- End Grid -->
+</div>
+
+    <!-- End Page Container -->
+        </div>
+    <!-- footer -->
+    <div class="w3-bottom">
+        <footer class="w3-container w3-theme-d3">
+            <h5>one Group</h5>
+            <p>she code appliction</p>
+          </footer>
+    </div>
+    <br>
+</body>
+</html>
