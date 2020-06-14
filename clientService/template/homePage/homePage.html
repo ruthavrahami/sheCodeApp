@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <body>
 <title>home page</title>
 <meta charset="UTF-8">
@@ -11,6 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href= style.css>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+file_uploads = On
 
 <style>
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
@@ -22,7 +22,6 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" title="home page"><i class="fa fa-home w3-margin-right"></i>1G</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class='far fa-comment-alt'></i></a>
         <div class="w3-dropdown-hover w3-hide-small">
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
                 <i style='font-size:24px' class='far'>&#xf2bd;</i>
@@ -48,10 +47,10 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
                 <div class="w3-card w3-round w3-white">
                     <div class="w3-container">
                         <h4 class="w3-center">הפרופיל שלי</h4>
-                        <p class="w3-center"><img src="C:\userAvatar.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                        <p class="w3-center"><img src="C:\applictionFiles\userAvatar.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                         <hr>
-                        <p><i class="fas fa-pencil-alt w3-margin-left w3-text-theme"></i> התפקיד שלי </p>
-                        <p><i class="fa fa-home fa-fw w3-margin-left w3-text-theme"></i> ישוב תנועת הנוער </p>
+                        <p><i class="fas fa-pencil-alt w3-margin-right w3-text-theme"></i> התפקיד שלי </p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> ישוב תנועת הנוער </p>
                     </div>
                 </div>
                 <br>
@@ -68,10 +67,10 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
                             <div class="w3-container w3-padding w3-right-align">
                                 <h6 class="w3-opacity ">:) יש לכם רעיון לפעולה ? שתפו אותנו </h6>
                                 <p contenteditable="true" class="w3-border w3-padding"> !כתבו את הקובץ , ואל תשכחו להעלות</p>
-                                <form action="welcome_get.php" method="get">
-                                    <input type="submit">
-                                    <input type="file" id="myFile" name="filename" class="w3-margin-right w3-text=theme"><i style='font-size:18px' class='fas'>&#xf303;</i></i> העלה קובץ </button>
-                                  </form>
+                                <form action="upload.php" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="fileToUpload" id="fileToUpload">
+                                    <input type="submit" value= "העלה" name="submit">
+                                </form>
                             </div>
                         </div>
                     </div>
